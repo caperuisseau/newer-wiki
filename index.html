@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newer Wiki</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        #searchBar {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        .article {
+            margin-bottom: 40px;
+        }
+        .hidden {
+            display: none;
+        }
+        .back-to-top {
+            display: block;
+            margin-top: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .back-to-top:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Newer Wiki</h1>
+
+    <nav>
+        <a href="#article1">Histoire</a>
+        <a href="#article2">Science</a>
+        <a href="#article3">Technologie</a>
+        <a href="#article4">Culture</a>
+        <a href="#article5">Géographie</a>
+        <a href="#article6">Littérature</a>
+        <a href="#article7">Philosophie</a>
+        <a href="#article8">Musique</a>
+        <a href="#article9">Mathématiques</a>
+        <a href="#article10">Art</a>
+    </nav>
+
+    <div class="container">
+        <!-- Barre de recherche -->
+        <input type="text" id="searchBar" placeholder="Rechercher un article..." onkeyup="searchArticles()">
+
+        <!-- Articles -->
+        <section id="article1" class="article">
+            <h2>Article 1: Histoire</h2>
+            <p>L'histoire est l'étude des événements passés, particulièrement dans les affaires humaines. Voici un résumé des grandes périodes historiques.</p>
+            <ul>
+                <li><strong>Préhistoire</strong>: Période avant l'invention de l'écriture.</li>
+                <li><strong>Antiquité</strong>: Civilisations anciennes comme les Égyptiens, Grecs, et Romains.</li>
+                <li><strong>Moyen Âge</strong>: Période après la chute de l'Empire romain.</li>
+            </ul>
+            <a class="back-to-top" href="#top">Retour en haut</a>
+        </section>
+
+        <section id="article2" class="article">
+            <h2>Article 2: Science</h2>
+            <p>La science est la quête de connaissance à travers des expériences et des observations. Elle se divise en plusieurs branches, comme la physique, la biologie et la chimie.</p>
+            <a class="back-to-top" href="#top">Retour en haut</a>
+        </section>
+
+        <section id="article3" class="article">
+            <h2>Article 3: Technologie</h2>
+            <p>La technologie concerne les inventions et les découvertes qui facilitent la vie humaine. Voici un aperçu de quelques-unes des technologies marquantes de l'histoire :</p>
+            <ul>
+                <li>La roue</li>
+                <li>L'imprimerie</li>
+                <li>L'informatique</li>
+            </ul>
+            <a class="back-to-top" href="#top">Retour en haut</a>
+        </section>
+
+        <section id="article4" class="article">
+            <h2>Article 4: Culture</h2>
+            <p>La culture englobe les arts, les croyances, et les traditions d'une société. Elle inclut la musique, la peinture, la littérature, et bien d'autres formes d'expression.</p>
+            <a class="back-to-top" href="#top">Retour en haut</a>
+        </section>
+
+        <section id="article5" class="article">
+            <h2>Article 5: Géographie</h2>
+            <p>La géographie est l'étude des lieux et des relations entre les personnes et leur environnement. Voici quelques concepts géographiques clés :</p>
+            <ul>
+                <li>Les continents et océans</li>
+                <li>Les climats mondiaux</li>
+                <li>Les reliefs et montagnes</li>
+            </ul>
+            <a class="back-to-top" href="#top">Retour en haut</a>
+        </section>
+
+        <section id="article6" class="article">
+            <h2>Article 6: Littérature</h2>
+            <p>La littérature concerne l'ensemble des œuvres écrites, particulièrement celles ayant une valeur artistique. Voici un aperçu des grandes périodes littéraires :</p>
+            <ul>
+                <li>Classiques de la Grèce et de Rome</li>
+                <li>Moyen Âge et récits épiques</li>
+                <li>Littérature moderne et contemporaine</li>
+            </ul>
+            <a class="back-to-top" href="#top">Retour en haut</a>
+        </section>
+
+        <section id="article7" class="article">
+            <h2>Article 7: Philosophie</h2>
+            <p>La philosophie est l'étude des questions fondamentales concernant l'existence, la connaissance, les valeurs, la raison, et le langage. Voici quelques domaines de la philosophie :</p>
+            <ul>
+                <li>Philosophie morale</li>
+                <li>Philosophie de l'esprit</li>
+                <li>Philosophie politique</li>
+            </ul>
+            <a class="back-to-top" href="#top">Retour en haut</a>
+        </section>
+
+        <section id="article8" class="article">
+            <h2>Article 8: Musique</h2>
+            <p>La musique est l'art de combiner les sons de manière harmonieuse. Voici un aperçu des grands genres musicaux :</p>
+            <ul>
+                <li>Musique classique</li>
+                <li>Jazz</li>
+                <li>Musique populaire</li>
+            </ul>
+            <a class="back-to-top" href="#top">Retour en haut</a>
+        </section>
+
+        <section id="article9" class="article">
+            <h2>Article 9: Mathématiques</h2>
+            <p>Les mathématiques sont la science des nombres, des formes et des structures. Voici quelques branches des mathématiques :</p>
+            <ul>
+                <li>Algèbre</li>
+                <li>Géométrie</li>
+                <li>Calcul différentiel et intégral</li>
+            </ul>
+            <a class="back-to-top" href="#top">Retour en haut</a>
+        </section>
+
+        <section id="article10" class="article">
+            <h2>Article 10: Art</h2>
+            <p>L'art est une expression créative qui peut prendre de nombreuses formes. Voici un aperçu des grandes catégories artistiques :</p>
+            <ul>
+                <li>Peinture</li>
+                <li>Sculpture</li>
+                <li>Architecture</li>
+            </ul>
+            <a class="back-to-top" href="#top">Retour en haut</a>
+        </section>
+
+    </div>
+
+    <script>
+        function searchArticles() {
+            // Récupère la valeur entrée dans la barre de recherche
+            const query = document.getElementById('searchBar').value.toLowerCase();
+
+            // Récupère tous les articles
+            const articles = document.querySelectorAll('.article');
+            
+            // Parcourt chaque article pour vérifier s'il contient la recherche
+            articles.forEach(article => {
+                const content = article.innerText.toLowerCase();
+                if (content.includes(query)) {
+                    article.classList.remove('hidden');
+                } else {
+                    article.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
